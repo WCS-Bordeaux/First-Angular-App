@@ -1,0 +1,8 @@
+<h2>{{$ctrl.title}}</h2>
+<h3>[{{$ctrl.name}}]</h3>
+<input type="text" ng-model="$ctrl.name">
+<button ng-click="$ctrl.alertMyName($ctrl.name)">AlertMyNameYo!</button>
+<div ng-repeat="person in $ctrl.persons">
+    <h3>{{person.name}} -> {{person.age}}</h3>
+    <div ng-click="$ctrl.deletePerson($ctrl.persons, $index)">DELETE</div>
+</div>
