@@ -7,10 +7,12 @@ angular.module("todo", [
     .config(function($stateProvider, $urlRouterProvider) {
         var states = [
             {
+                name: "home",
                 url: "/home",
                 component: "home"
             },
             {
+                name: "contact",
                 url: "/contact",
                 component: "contact"
             }
